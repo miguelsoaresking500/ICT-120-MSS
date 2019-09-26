@@ -24,7 +24,12 @@
   <component name="ProjectId" id="1QjrjCrUzrqzwSvjFqfEeKlMpol" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/tools/php73/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\ICT-120-MSS" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,6 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1568294978731</updated>
       <workItem from="1568294981153" duration="2465000" />
+      <workItem from="1569239848652" duration="3448000" />
+      <workItem from="1569506466859" duration="813000" />
     </task>
     <servers />
   </component>
@@ -80,7 +87,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
