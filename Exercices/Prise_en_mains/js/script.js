@@ -1,37 +1,70 @@
-let bleu=document.getElementById(  'cssbleutrace');
-let removecss=document.getElementById(  'removecss');
-let changepoli1=document.getElementById( 'changepoli');
-let YES=document.getElementById( 'YES');
-let YESS=document.getElementById( 'YESS');
-let yes1=document.getElementById( 'yes1');
-let yes2=document.getElementById( 'yes2');
+document.addEventListener('DOMContentLoaded', init)
 
-bleu.addEventListener( 'click', fnbleu);
-removecss.addEventListener( 'click', fnremovecss);
-changepoli1.addEventListener( 'mouseover',fnpolice);
-changepoli1.addEventListener( 'mouseout',fnrpolice);
+function init() {
+    bluetraced.addEventListener('click', Div1Click)
+    clearDiv1.addEventListener('click', ClearDiv1)
+    fontArial.addEventListener('mouseover', FontArial)
+    fontArial.addEventListener('mouseleave', FontArial2)
+    YESS.addEventListener('click', Yes)
+    ciao.addEventListener('click', ClickText)
+    nomprenom.addEventListener('keyup', Initiales)
+    course.addEventListener('click', course)
 
-
-function fnbleu() {
-    bleu.classList.add('cssbleutrace')
 }
 
-function fnremovecss() {
-    bleu.classList.remove('cssbleutrace')
+function Div1Click() {
+    bluetraced.style.backgroundColor = "lightblue"
+    bluetraced.style.textDecoration = "line-through"
 }
 
-function fnpolice() {
-    changepoli1.classList.add('changepoli')
-}
-function fnrpolice() {
-    changepoli1.classList.remove('changepoli')
+function ClearDiv1() {
+    bluetraced.style.backgroundColor = "white"
+    bluetraced.style.textDecoration = "none"
 }
 
-function fnyes(){
-    if (yes1.checked===true && yes2.checked===true ){
+function FontArial() {
+    fontArial.style.fontFamily = "arial"
+}
 
-        YES.style.display = "none"
-        YESS.style.display = "block"
+function FontArial2() {
+    fontArial.style.fontFamily = ""
+}
+
+
+function Yes() {
+    if (yes1.checked && yes2.checked) {
+        document.getElementById("YES").style.display = "none";
+        document.getElementById("YESS").style.display = "block";
+        YESS.style.backgroundColor = "green";
+        YESS.style.color = "white";
+
+    }
+}
+
+function ClickText() {
+    if (ciao.click) {
+        document.getElementById("caput").style.display = "none";
+    }
+}
+
+function Initiales() {
+    var espace = 0
+    var longueur = " "
+    var initiales = " "
+    var initiales2 = " "
+    var initiales3 = " "
+    longueur = nomprenom.value.length
+    espace = nomprenom.value.lastIndexOf(" ")
+    initiales = nomprenom.value.substr(0, 1)
+    initiales2 = nomprenom.value.substr(espace + 1, 1)
+    initiales3 = nomprenom.value.substr(longueur - 1, 1)
+    Initiales1.value = initiales.toUpperCase() + initiales2.toUpperCase() + initiales3.toUpperCase()
+}
+
+function course() {
+    if(ready.clicked){
+        set
     }
 
 }
+

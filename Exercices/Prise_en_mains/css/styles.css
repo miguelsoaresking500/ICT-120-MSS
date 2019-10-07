@@ -4,15 +4,15 @@ div {
     border: solid 1px black;
     width: fit-content;
 }
-.cssbleutrace{
+.bleu{
     background-color: blue;
     text-decoration:line-through;
 }
-.changepoli{
+.changepoli1{
     font-family: Arial;
 }
 
 .YESS{
     background-color: greenyellow;
-    color: aliceblue;
+    color: white;
 }
