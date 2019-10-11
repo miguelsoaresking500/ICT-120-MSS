@@ -63,7 +63,8 @@ function Initiales() {
 
 function course() {
     if(ready.clicked){
-        set
+        set==false;
+
     }
 
 }
