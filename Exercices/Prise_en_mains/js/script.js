@@ -5,10 +5,16 @@ function init() {
     clearDiv1.addEventListener('click', ClearDiv1)
     fontArial.addEventListener('mouseover', FontArial)
     fontArial.addEventListener('mouseleave', FontArial2)
-    YESS.addEventListener('click', Yes)
+    yes1.addEventListener('click', Yes)
+    yes2.addEventListener('click', Yes)
     ciao.addEventListener('click', ClickText)
     nomprenom.addEventListener('keyup', Initiales)
-    course.addEventListener('click', course)
+    ready.addEventListener('click', Ready)
+    set.addEventListener('click', Set)
+    go.addEventListener('click', Go)
+
+
+
 
 }
 
@@ -42,9 +48,9 @@ function Yes() {
 }
 
 function ClickText() {
-    if (ciao.click) {
-        document.getElementById("caput").style.display = "none";
-    }
+
+    document.getElementById("caput").style.display = "none";
+
 }
 
 function Initiales() {
@@ -61,11 +67,48 @@ function Initiales() {
     Initiales1.value = initiales.toUpperCase() + initiales2.toUpperCase() + initiales3.toUpperCase()
 }
 
-function course() {
-    if(ready.clicked){
-        set==false;
+function Ready() {
 
-    }
+    document.getElementById("imgempty").hidden=true;
+    document.getElementById("ready").disabled = false;
+    document.getElementById("set").disabled = false;
+    document.getElementById("ready").disabled = true;
+    document.getElementById("imgmarks").hidden=false;
 
 }
+
+function Set() {
+
+    document.getElementById("imgmarks").hidden=true;
+    document.getElementById("imgset").hidden = false;
+    document.getElementById("set").disabled = true;
+    document.getElementById("go").hidden = false;
+    document.getElementById("go").style.visibility = "block";
+    document.getElementById("imggo").hidden=true;
+
+}
+function Go() {
+    document.getElementById("imgset").hidden = true;
+    document.getElementById("imggo").hidden=false;
+    document.getElementById("set").disabled = true;
+
+
+    setTimeout(New,2000);
+
+
+
+
+}
+function New() {
+    document.getElementById("imgset").hidden = true;
+    document.getElementById("imggo").hidden=true;
+    document.getElementById("imgempty").hidden=false;
+    document.getElementById("ready").disabled = true;
+    document.getElementById("go").hidden = true;
+    document.getElementById("ready").disabled = false;
+
+
+
+}
+
 
