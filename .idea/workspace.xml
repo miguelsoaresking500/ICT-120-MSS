@@ -30,6 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -44,10 +46,16 @@
   </component>
   <component name="ProjectId" id="1QjrjCrUzrqzwSvjFqfEeKlMpol" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\ICT-120-MSS" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\ICT-120-MSS" />
     </key>
@@ -105,6 +113,7 @@
       <workItem from="1570793689968" duration="2486000" />
       <workItem from="1572266953204" duration="6696000" />
       <workItem from="1572532700840" duration="11000" />
+      <workItem from="1572533360089" duration="3854000" />
     </task>
     <servers />
   </component>
