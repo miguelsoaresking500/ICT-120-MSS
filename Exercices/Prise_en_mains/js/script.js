@@ -93,7 +93,7 @@ function Go() {
     document.getElementById("set").disabled = true;
 
 
-    setTimeout(New,2000);
+    setTimeout(New,3000);
 
 
 
