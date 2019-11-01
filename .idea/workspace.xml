@@ -24,6 +24,7 @@
   <component name="ProjectId" id="1SyoFla2VDQuFs6K5MkoNZu2oNT" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PageVoyage/css" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,6 +49,8 @@
       <option name="presentableId" value="Default" />
       <updated>1572545106869</updated>
       <workItem from="1572545132939" duration="7153000" />
+      <workItem from="1572612863461" duration="44000" />
+      <workItem from="1572618576295" duration="316000" />
     </task>
     <servers />
   </component>
@@ -59,7 +62,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
