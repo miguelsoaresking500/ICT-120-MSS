@@ -25,19 +25,128 @@ nav-custom{
 
  table.Tablepersons {
 
-     width: 60%;
-     background-color: #ffffff;
-     border-collapse: collapse;
-     border-width: 2px;
-     border-color: #000000;
-     border-style: ridge;
-     color: #000000;
-     overflow: auto;
-     position: relative;
-     margin: 10px;
-     padding: 0;
-     float: left;
- }
+       width: 60%;
+       background-color: #ffffff;
+       border-collapse: collapse;
+       border-width: 2px;
+       border-color: #000000;
+       border-style: ridge;
+       color: #000000;
+       overflow: auto;
+       position: relative;
+       margin: 10px;
+       padding: 0;
+       float: left;
+   }
+
+table.Tablepersons2 {
+
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+    color: #000000;
+    overflow: auto;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    float: left;
+}
+
+table.Tablepersons2 td, table.Tablepersons2 th {
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+
+}
+
+table.Tablepersons2 thead {
+    background-color: #006300;
+}
+table.Tablepersons3 {
+
+    width: 60%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+    color: #000000;
+    overflow: auto;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    float: left;
+}
+
+table.Tablepersons3 td, table.Tablepersons3 th {
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+
+}
+
+table.Tablepersons3 thead {
+    background-color: #006300;
+
+}
+
+table.Tablepersons4 {
+
+    width: 60%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+    color: #000000;
+    overflow: auto;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    float: left;
+}
+
+table.Tablepersons4 td, table.Tablepersons4 th {
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+
+}
+
+table.Tablepersons4 thead {
+    background-color: #006300;
+}
+
+table.Tablepersons5 {
+
+    width: 60%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+    color: #000000;
+    overflow: auto;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    float: left;
+}
+
+table.Tablepersons5 td, table.Tablepersons5 th {
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+
+}
+
+table.Tablepersons5 thead {
+    background-color: #006300;
+}
+
 
 table.Tablepersons td, table.Tablepersons th {
     border-width: 2px;
