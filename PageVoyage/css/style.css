@@ -50,7 +50,7 @@ table.Tablepersons2 {
     color: #000000;
     overflow: auto;
     position: relative;
-    margin: 10px;
+
     padding: 0;
     float: left;
 }
@@ -76,7 +76,7 @@ table.Tablepersons3 {
     color: #000000;
     overflow: auto;
     position: relative;
-    margin: 10px;
+    margin-top: 10%;
     padding: 0;
     float: left;
 }
@@ -104,7 +104,7 @@ table.Tablepersons4 {
     color: #000000;
     overflow: auto;
     position: relative;
-    margin: 10px;
+    margin-top: 10%;
     padding: 0;
     float: left;
 }
@@ -121,7 +121,7 @@ table.Tablepersons4 thead {
 }
 
 table.Tablepersons5 {
-
+    margin-top: 10%;
     width: 60%;
     background-color: #ffffff;
     border-collapse: collapse;
@@ -131,8 +131,8 @@ table.Tablepersons5 {
     color: #000000;
     overflow: auto;
     position: relative;
-    margin: 10px;
     padding: 0;
+    margin-left: 20px;
     float: left;
 }
 
@@ -163,14 +163,17 @@ table.Tablepersons thead {
 .divchamps{
 
 float: left;
-    margin: 10px;
+    margin-top: 10%;
+    margin-left: 10px;
 
 }
 .divchamps2{
 
     float: left;
     position: sticky;
-    margin: 10px;
+    margin-top: 10%;
+    margin-left: 1px;
+
 
 }
 .form-control{
@@ -183,6 +186,12 @@ float: left;
 
 }
 #buttonsup:hover{
+    background: dodgerblue;
+    color: white;
+    transition: color;
+
+}
+#buttonedit:hover{
     background: dodgerblue;
     color: white;
     transition: color;
