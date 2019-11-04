@@ -1,33 +1,25 @@
 document.addEventListener('DOMContentLoaded', init)
 
 function init() {
-    usr.addEventListener('click', clickinput)
-    pwd.addEventListener('click', clickinput)
-    liste.addEventListener('click', clickliste)
-    ajouter.addEventListener('click', clickajouter)
-    supprimer.addEventListener('click', clicksupprimer)
-    editer.addEventListener('click', clickediter)
-}
 
-function clickinput() {
-    document.getElementById('usr').value = " ";
-    document.getElementById('pwd').value = " ";
-}
 
-function clickliste() {
-    Tablepersons.style.width = "60";
-    document.getElementById('divchamps').display = "none";
-}
+    cmdadd.addEventListener('click', Ajouter)
 
-function clickajouter() {
 
 }
 
-function clicksupprimer() {
 
+function Ajouter() {
+
+    console.log()
+    tr = document.createElement('tr')
+    td1.innerText = txtName.value
+    td1 = document.createElement('td')
+    tr.appendChild(td1)
+    tblBody.appendChild(tr)
 }
 
-function clickediter() {
 
-}
+
+
 

@@ -1,43 +1,44 @@
-.formulaire1{
+.formulaire1 {
     float: right;
 
 }
 
-.f1{
+.f1 {
     float: left;
     margin: 10px;
     color: gray;
 }
 
-.f2{
+.f2 {
     float: left;
     margin: 10px;
     color: gray;
 }
-nav-custom{
-    background:transparent;
+
+nav-custom {
+    background: transparent;
 }
 
-.container{
+.container {
     width: 100%;
     overflow: auto;
 }
 
- table.Tablepersons {
+table.Tablepersons {
 
-       width: 60%;
-       background-color: #ffffff;
-       border-collapse: collapse;
-       border-width: 2px;
-       border-color: #000000;
-       border-style: ridge;
-       color: #000000;
-       overflow: auto;
-       position: relative;
-       margin: 10px;
-       padding: 0;
-       float: left;
-   }
+    width: 60%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: ridge;
+    color: #000000;
+    overflow: auto;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    float: left;
+}
 
 table.Tablepersons2 {
 
@@ -47,7 +48,7 @@ table.Tablepersons2 {
     border-width: 2px;
     border-color: #000000;
     border-style: ridge;
-    color: #000000;
+    color: #ffffff;
     overflow: auto;
     position: relative;
 
@@ -65,83 +66,9 @@ table.Tablepersons2 td, table.Tablepersons2 th {
 table.Tablepersons2 thead {
     background-color: #006300;
 }
-table.Tablepersons3 {
 
-    width: 60%;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-    color: #000000;
-    overflow: auto;
-    position: relative;
-    margin-top: 10%;
-    padding: 0;
-    float: left;
-}
 
-table.Tablepersons3 td, table.Tablepersons3 th {
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
 
-}
-
-table.Tablepersons3 thead {
-    background-color: #006300;
-
-}
-
-table.Tablepersons4 {
-
-    width: 60%;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-    color: #000000;
-    overflow: auto;
-    position: relative;
-    margin-top: 10%;
-    padding: 0;
-    float: left;
-}
-
-table.Tablepersons4 td, table.Tablepersons4 th {
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-
-}
-
-table.Tablepersons4 thead {
-    background-color: #006300;
-}
-
-table.Tablepersons5 {
-    margin-top: 10%;
-    width: 60%;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-    color: #000000;
-    overflow: auto;
-    position: relative;
-    padding: 0;
-    margin-left: 20px;
-    float: left;
-}
-
-table.Tablepersons5 td, table.Tablepersons5 th {
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-
-}
 
 table.Tablepersons5 thead {
     background-color: #006300;
@@ -160,42 +87,31 @@ table.Tablepersons thead {
 
 }
 
-.divchamps{
-
-float: left;
-    margin-top: 10%;
-    margin-left: 10px;
-
-}
-.divchamps2{
-
+#cmdadd{
+    size: 20px;
     float: left;
-    position: sticky;
-    margin-top: 10%;
-    margin-left: 1px;
+}
 
 
-}
-.form-control{
-    margin: 4px;
-}
-#button:hover{
+
+
+#buttonsup:hover {
     background: dodgerblue;
     color: white;
     transition: color;
 
 }
-#buttonsup:hover{
+#buttonedit:hover {
     background: dodgerblue;
     color: white;
     transition: color;
 
 }
-#buttonedit:hover{
+#cmdadd:hover {
     background: dodgerblue;
     color: white;
     transition: color;
 
-}
 
+}
 
