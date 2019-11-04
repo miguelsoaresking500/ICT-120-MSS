@@ -1,113 +1,25 @@
-.formulaire1 {
+.formulaire1{
     float: right;
 
 }
 
-.f1 {
+.f1{
     float: left;
     margin: 10px;
     color: gray;
 }
 
-.f2 {
+.f2{
     float: left;
     margin: 10px;
     color: gray;
 }
-
-nav-custom {
-    background: transparent;
-}
-
-.container {
-    width: 100%;
-    overflow: auto;
-}
-
-table.Tablepersons {
-
-    width: 60%;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-    color: #000000;
-    overflow: auto;
-    position: relative;
-    margin: 10px;
-    padding: 0;
-    float: left;
-}
-
-table.Tablepersons2 {
-
-    width: 100%;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-    color: #ffffff;
-    overflow: auto;
-    position: relative;
-
-    padding: 0;
-    float: left;
-}
-
-table.Tablepersons2 td, table.Tablepersons2 th {
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-
-}
-
-table.Tablepersons2 thead {
-    background-color: #006300;
+nav-custom{
+    background:transparent;
 }
 
 
-
-
-table.Tablepersons5 thead {
-    background-color: #006300;
-}
-
-
-table.Tablepersons td, table.Tablepersons th {
-    border-width: 2px;
-    border-color: #000000;
-    border-style: ridge;
-
-}
-
-table.Tablepersons thead {
-    background-color: #006300;
-
-}
-
-#cmdadd{
-    size: 20px;
-    float: left;
-}
-
-
-
-
-#buttonsup:hover {
-    background: dodgerblue;
-    color: white;
-    transition: color;
-
-}
-#buttonedit:hover {
-    background: dodgerblue;
-    color: white;
-    transition: color;
-
-}
-#cmdadd:hover {
+#btn btn-success:hover {
     background: dodgerblue;
     color: white;
     transition: color;
