@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    cmdSave.addEventListener("click",adduser);
+    cmdadd.addEventListener("click",adduser);
 }
 function cache(){
     table.classList.remove("tab");
