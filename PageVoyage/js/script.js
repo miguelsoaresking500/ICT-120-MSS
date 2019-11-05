@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
     cmdadd.addEventListener("click",adduser);
+    cmddelete.addEventListener("click",usrdelete);
+    cmdedit._addEventListeners("click",usredit)
 }
 function cache(){
     table.classList.remove("tab");
@@ -10,7 +12,6 @@ function cache(){
 
 function adduser(){
     tr = document.createElement('tr')
-
     th = document.createElement('th')
     td1 = document.createElement('td')
     td2 = document.createElement('td')
@@ -21,6 +22,8 @@ function adduser(){
     td7 = document.createElement('td')
     td8 = document.createElement('td')
     td9 = document.createElement('td')
+    td10 = document.createElement('input')
+
 
     th.innerText = txtNum0.value;
     td1.innerText = txtNum1.value;
@@ -45,4 +48,34 @@ function adduser(){
     tr.appendChild(td9)
 
     tblBody.appendChild(tr)
+}
+
+function usrdelete() {
+    tr.removeChild(th)
+    tr.removeChild(td1)
+    tr.removeChild(td2)
+    tr.removeChild(td3)
+    tr.removeChild(td4)
+    tr.removeChild(td5)
+    tr.removeChild(td6)
+    tr.removeChild(td7)
+    tr.removeChild(td8)
+    tr.removeChild(td9)
+
+    tblBody.removeChild(tr)
+}
+
+function usredit() {
+    tr.replaceChild(th)
+    tr.replaceChild(td1)
+    tr.replaceChild(td2)
+    tr.replaceChild(td3)
+    tr.replaceChild(td4)
+    tr.replaceChild(td5)
+    tr.replaceChild(td6)
+    tr.replaceChild(td7)
+    tr.replaceChild(td8)
+    tr.replaceChild(td9)
+
+    tblBody.replaceChild(tr)
 }
