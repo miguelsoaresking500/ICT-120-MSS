@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
     cmdadd.addEventListener("click",adduser);
     cmddelete.addEventListener("click",usrdelete);
-    cmdedit._addEventListeners("click",usredit)
+    cmdedit.addEventListener("click",usredit)
 }
 function cache(){
     table.classList.remove("tab");
@@ -22,7 +22,23 @@ function adduser(){
     td7 = document.createElement('td')
     td8 = document.createElement('td')
     td9 = document.createElement('td')
-    td10 = document.createElement('input')
+    td10 = document.createElement('td')
+
+    var button = document.createElement('input')
+    var button2 = document.createElement('input')
+    td10 = button
+    td11 = button2
+
+    button.type = "button";
+    button.value = "X";
+    button.id = "cmddelete";
+    button.classList.add("test");
+    button2.type = "button";
+    button2.value = "Éditer";
+    button2.id = "cmdedit";
+    button.classList.add("test");
+
+
 
 
     th.innerText = txtNum0.value;
@@ -35,6 +51,8 @@ function adduser(){
     td7.innerText = txtNum7.value;
     td8.innerText = txtNum8.value;
     td9.innerText = txtNum9.value;
+    td10.innerText=td10
+    td11.innerText=td11
 
     tr.appendChild(th)
     tr.appendChild(td1)
@@ -46,23 +64,21 @@ function adduser(){
     tr.appendChild(td7)
     tr.appendChild(td8)
     tr.appendChild(td9)
+    tr.appendChild(button)
+    tr.appendChild(button2)
+
 
     tblBody.appendChild(tr)
 }
 
-function usrdelete() {
-    tr.removeChild(th)
-    tr.removeChild(td1)
-    tr.removeChild(td2)
-    tr.removeChild(td3)
-    tr.removeChild(td4)
-    tr.removeChild(td5)
-    tr.removeChild(td6)
-    tr.removeChild(td7)
-    tr.removeChild(td8)
-    tr.removeChild(td9)
-
+function usrdelete(event) {
+    button = event.target
+    td = button.parentNode
+    tr = td.button.parentNode
+    tblBody=td.parentNode
     tblBody.removeChild(tr)
+
+
 }
 
 function usredit() {
