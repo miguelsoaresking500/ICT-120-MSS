@@ -1,7 +1,4 @@
-.formulaire1{
-    float: right;
 
-}
 
 .f1{
     float: left;
@@ -14,24 +11,13 @@
     margin: 10px;
     color: gray;
 }
-nav-custom{
-    background:transparent;
+
+
+.tab{
+    overflow: auto;
 }
 
 
-#btn btn-success:hover {
-    background: dodgerblue;
-    color: white;
-    transition: color;
 
 
-}
-
-.table{
-    width: fit-content;
-}
-
-.test{
-    background-color: red;
-}
 

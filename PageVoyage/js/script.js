@@ -4,6 +4,7 @@ function init() {
     cmdadd.addEventListener("click",adduser);
     cmddelete.addEventListener("click",usrdelete);
     cmdedit.addEventListener("click",usredit)
+    cmdsave.addEventListener("click", usrsave)
 }
 function cache(){
     table.classList.remove("tab");
@@ -25,19 +26,15 @@ function adduser(){
     td10 = document.createElement('td')
 
     var button = document.createElement('input')
-    var button2 = document.createElement('input')
+
     td10 = button
-    td11 = button2
+
 
     button.type = "button";
     button.value = "X";
     button.id = "cmddelete";
     button.classList.add("btn-danger");
     button.classList.add("btn");
-    button2.type = "button";
-    button2.value = "Éditer";
-    button2.id = "cmdedit";
-    button2.classList.add("btn-info");
 
 
 
@@ -53,7 +50,6 @@ function adduser(){
     td8.innerText = txtNum8.value;
     td9.innerText = txtNum9.value;
     td10.innerText=td10
-    td11.innerText=td11
 
     tr.appendChild(th)
     tr.appendChild(td1)
@@ -66,7 +62,7 @@ function adduser(){
     tr.appendChild(td8)
     tr.appendChild(td9)
     tr.appendChild(button)
-    tr.appendChild(button2)
+
 
 
     tblBody.appendChild(tr)
@@ -75,24 +71,54 @@ function adduser(){
 function usrdelete(event) {
     button = event.target
     td = button.parentNode
-    tr = td.button.parentNode
-    tblBody=td.parentNode
-    tblBody.removeChild(tr)
+    tr = td.parentNode
+    table=td.parentNode
+    table.removeChild(tr)
 
 
 }
 
 function usredit() {
-    tr.replaceChild(th)
-    tr.replaceChild(td1)
-    tr.replaceChild(td2)
-    tr.replaceChild(td3)
-    tr.replaceChild(td4)
-    tr.replaceChild(td5)
-    tr.replaceChild(td6)
-    tr.replaceChild(td7)
-    tr.replaceChild(td8)
-    tr.replaceChild(td9)
+    table =tblBody.children
+    for(nbrow = 0; nbrow< tblBody.children.length; nbrow++)
+    {
+        row = tblBody.children[nbrow]
 
-    tblBody.replaceChild(tr)
+        for(nbcol = 0; nbcol< row.children.length; nbcol++)
+        {
+            cell = row.children[nbcol]
+            inp= document.createElement('input')
+            inp.type ='text'
+            inp.value = cell.innerText;
+            cell.innerText = ''
+
+            cell.appendChild(inp)
+
+
+        }
+
+    }
+    cmdadd.classList.add("d-none")
+    cmdedit.classList.add("d-none")
+    cmdsave.classList.remove("d-none")
+}
+
+function usrsave() {
+    table =tblBody.children
+    for(nbrow = 0; nbrow< tblBody.children.length; nbrow++)
+    {
+        row = tblBody.children[nbrow]
+
+        for(nbcol = 0; nbcol< row.children.length; nbcol++)
+        {
+            cell = row.children[nbcol]
+            cell.innerHTML = cell.firstChild.value
+
+
+        }
+
+    }
+    cmdadd.classList.remove("d-none")
+    cmdedit.classList.remove("d-none")
+    cmdsave.classList.add("d-none")
 }
