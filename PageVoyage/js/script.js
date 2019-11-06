@@ -32,11 +32,12 @@ function adduser(){
     button.type = "button";
     button.value = "X";
     button.id = "cmddelete";
-    button.classList.add("test");
+    button.classList.add("btn-danger");
+    button.classList.add("btn");
     button2.type = "button";
     button2.value = "Éditer";
     button2.id = "cmdedit";
-    button.classList.add("test");
+    button2.classList.add("btn-info");
 
 
 
