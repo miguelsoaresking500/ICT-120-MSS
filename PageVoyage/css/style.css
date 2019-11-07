@@ -1,23 +1,32 @@
 
 
-.f1{
-    float: left;
-    margin: 10px;
-    color: gray;
-}
-
-.f2{
-    float: left;
-    margin: 10px;
-    color: gray;
-}
 
 
 .tab{
-    overflow: auto;
+margin-left: 2px;
+    margin-right: 20px;
+
 }
 
+#tab1{
 
+    margin-left: 2px;
 
+}
 
+.cpnv {
+ color: #4CAF50;
+}
+
+.bouttons{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.form-row{
+    float: right;
+}
+.tab {
+    margin-left: 5px;
+}
 
