@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    cmdadd.addEventListener("click",adduser);
-    cmddelete.addEventListener("click",usrdelete);
-    cmdedit.addEventListener("click",usredit);
+    cmdadd.addEventListener("click", adduser);
+    cmddelete.addEventListener("click", usrdelete);
+    cmdedit.addEventListener("click", usredit);
     cmdsave.addEventListener("click", usrsave);
-    txtNum1.addEventListener("keyup",initiale);
-    cmdshowless.addEventListener("click",cacher)
+    txtNum1.addEventListener("keyup", initiale);
+    cmdshowless.addEventListener("click", hide);
+    cmdshowmore.addEventListener("click", show);
 
 }
 
 
-
-
-function adduser(){
+function adduser() {
     tr = document.createElement('tr')
     th = document.createElement('th')
     td1 = document.createElement('td')
@@ -32,13 +31,12 @@ function adduser(){
     td10 = button
 
 
-    button.type = "button";
-    button.value = "X";
-    button.id = "cmddelete";
-    button.classList.add("btn-danger");
+    button.type = 'button';
+    button.value = 'X';
+    button.id = 'cmddelete';
+    button.classList.add('btn-danger');
     button.classList.add("btn");
-
-
+    button.addEventListener('click',usrdelete)
 
 
     th.innerText = txtNum0.value;
@@ -51,7 +49,7 @@ function adduser(){
     td7.innerText = txtNum7.value;
     td8.innerText = txtNum8.value;
     td9.innerText = txtNum9.value;
-    td10.innerText=td10
+    td10.innerText = td10
 
     tr.appendChild(th)
     tr.appendChild(td1)
@@ -64,9 +62,6 @@ function adduser(){
     tr.appendChild(td8)
     tr.appendChild(td9)
     tr.appendChild(button)
-
-
-
     tblBody.appendChild(tr)
 
 
@@ -76,23 +71,21 @@ function usrdelete(event) {
     button = event.target
     td = button.parentNode
     tr = td.parentNode
-    table=td.parentNode
-    table.removeChild(tr)
+    tblBody = tr.parentNode
+    tblBody.removeChild(tr)
 
 
 }
 
 function usredit() {
-    table =tblBody.children
-    for(nbrow = 0; nbrow< tblBody.children.length; nbrow++)
-    {
+    table = tblBody.children
+    for (nbrow = 0; nbrow < tblBody.children.length; nbrow++) {
         row = tblBody.children[nbrow]
 
-        for(nbcol = 0; nbcol< row.children.length; nbcol++)
-        {
+        for (nbcol = 0; nbcol < row.children.length; nbcol++) {
             cell = row.children[nbcol]
-            inp= document.createElement('input')
-            inp.type ='text'
+            inp = document.createElement('input')
+            inp.type = 'text'
             inp.value = cell.innerText;
             cell.innerText = ''
 
@@ -110,13 +103,11 @@ function usredit() {
 }
 
 function usrsave() {
-    table =tblBody.children
-    for(nbrow = 0; nbrow< tblBody.children.length; nbrow++)
-    {
+    table = tblBody.children
+    for (nbrow = 0; nbrow < tblBody.children.length; nbrow++) {
         row = tblBody.children[nbrow]
 
-        for(nbcol = 0; nbcol< row.children.length; nbcol++)
-        {
+        for (nbcol = 0; nbcol < row.children.length; nbcol++) {
             cell = row.children[nbcol]
             cell.innerHTML = cell.firstChild.value
 
@@ -128,16 +119,27 @@ function usrsave() {
     cmdedit.classList.remove("d-none")
     cmdsave.classList.add("d-none")
     cmdshowless.classList.remove("d-none")
-    tab1.classList.remove("cacher");
+    tab1.classList.remove("d-none");
 
 }
 
-function cacher() {
-txtNum2.classList.add("d-none");
+function hide() {
+
+    cmdshowless.classList.add("d-none");
+    cmdshowmore.classList.remove("d-none");
+
 
 }
 
-function initiale(){
+function show() {
+
+    cmdshowless.classList.remove("d-none");
+    cmdshowmore.classList.add("d-none");
+
+
+}
+
+function initiale() {
 
     var x = " ";
     //we meuser length of the name

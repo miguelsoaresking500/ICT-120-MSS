@@ -1,33 +1,33 @@
 
-
-
-.cacher{
+.cacher {
     display: none;
 }
-.tab{
-margin-left: 2px;
+
+.tab {
+    margin-left: 2px;
     margin-right: 20px;
 
 }
 
-#tab1{
+#tab1 {
 
     margin-left: 2px;
 
 }
 
 .cpnv {
- color: #4CAF50;
+    color: #4CAF50;
 }
 
-.bouttons{
+.bouttons {
     margin-bottom: 15px;
     margin-left: 15px;
 }
 
-.form-row{
+.form-row {
     float: right;
 }
+
 .tab {
     margin-left: 5px;
 }
