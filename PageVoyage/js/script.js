@@ -119,7 +119,7 @@ function usrsave() {
     cmdedit.classList.remove("d-none")
     cmdsave.classList.add("d-none")
     cmdshowless.classList.remove("d-none")
-    tab1.classList.remove("d-none");
+    tab1.classList.remove("cacher");
 
 }
 
