@@ -3,12 +3,14 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
     cmdadd.addEventListener("click",adduser);
     cmddelete.addEventListener("click",usrdelete);
-    cmdedit.addEventListener("click",usredit)
-    cmdsave.addEventListener("click", usrsave)
+    cmdedit.addEventListener("click",usredit);
+    cmdsave.addEventListener("click", usrsave);
+    txtNum1.addEventListener("keyup",initiale);
+    cmdshowless.addEventListener("click",cacher)
+
 }
-function cache(){
-    table.classList.remove("tab");
-}
+
+
 
 
 function adduser(){
@@ -66,6 +68,8 @@ function adduser(){
 
 
     tblBody.appendChild(tr)
+
+
 }
 
 function usrdelete(event) {
@@ -100,7 +104,9 @@ function usredit() {
     }
     cmdadd.classList.add("d-none")
     cmdedit.classList.add("d-none")
+    cmdshowless.classList.add("d-none")
     cmdsave.classList.remove("d-none")
+    tab1.classList.add("cacher");
 }
 
 function usrsave() {
@@ -121,4 +127,36 @@ function usrsave() {
     cmdadd.classList.remove("d-none")
     cmdedit.classList.remove("d-none")
     cmdsave.classList.add("d-none")
+    cmdshowless.classList.remove("d-none")
+    tab1.classList.remove("cacher");
+
+}
+
+function cacher() {
+txtNum2.classList.add("d-none");
+
+}
+
+function initiale(){
+
+    var x = " ";
+    //we meuser length of the name
+
+    var long = txtNum1.value.length;
+    //find where is the place exactly
+
+
+    var espace = txtNum1.value.indexOf(x);
+    //now we go slowly to take first letter
+    var lettre1 = txtNum1.value.substr(0, 1);
+    // find space between name and last name
+    var lettre2 = txtNum1.value.substr(espace + 1, 1);
+    // take last letter
+    var lettre3 = txtNum1.value.substr(long - 1, 1);
+    // concatenate together to make initialisation
+    var resultat = lettre1 + lettre2 + lettre3;
+    // all to upper case
+    var upcase = resultat.toUpperCase();
+    // put the value in the second box
+    txtNum9.value = upcase;
 }

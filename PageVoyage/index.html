@@ -81,9 +81,9 @@
 
         <tbody class="col-sm-6">
         <tr>
-            <th scope="row"><input type="text" id="txtNum0" placeholder="numéro"></th>
+            <th scope="row"><input type="number" id="txtNum0" placeholder="numéro" min="1"></th>
             <td><input type="text" id="txtNum1" placeholder="Nom complet"></td>
-            <td><input type="text" id="txtNum2" placeholder=" Age "></td>
+            <td><input type="number" id="txtNum2" placeholder=" Age " min="14"></td>
             <td><input type="text" id="txtNum3" placeholder="Classe"></td>
             <td><input type="text" id="txtNum4" placeholder="Genre"></td>
             <td><input type="text" id="txtNum5" placeholder="N°téléphone"></td>
@@ -101,6 +101,7 @@
 <input class="btn btn-info" id="cmdedit" type="button" value="Éditer">
 <input  class="btn btn-success" id="cmdadd" type="button" VALUE="Ajouter">
 <input  class="btn btn-success d-none" id="cmdsave" type="button" display="none" VALUE="Sauvegarder">
+    <input  class="btn btn-primary " id="cmdshowless" type="button"  VALUE="Montrer moins">
 </div>
 <table class="table table-striped table-dark ">
 
