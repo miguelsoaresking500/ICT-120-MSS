@@ -4,6 +4,7 @@ div {
     border: solid 1px black;
     width: fit-content;
 }
+
 .bleu{
     background-color: blue;
     text-decoration:line-through;

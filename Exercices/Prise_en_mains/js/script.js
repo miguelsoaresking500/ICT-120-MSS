@@ -19,13 +19,12 @@ function init() {
 }
 
 function Div1Click() {
-    bluetraced.style.backgroundColor = "lightblue"
-    bluetraced.style.textDecoration = "line-through"
+    bluetraced.classList.add("bleu");
+
 }
 
 function ClearDiv1() {
-    bluetraced.style.backgroundColor = "white"
-    bluetraced.style.textDecoration = "none"
+    bluetraced.classList.remove("bleu");
 }
 
 function FontArial() {
@@ -49,7 +48,7 @@ function Yes() {
 
 function ClickText() {
 
-    document.getElementById("caput").style.display = "none";
+    document.getElementById("caput").remove();
 
 }
 
