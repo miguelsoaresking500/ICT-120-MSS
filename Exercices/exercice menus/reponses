@@ -1,0 +1,30 @@
+--Q1
+Cette partie du ccs fait apparaitre les sous menus lors qu'on survole l'une des options
+
+ul li ul li:hover { background: #666; }
+ul li:hover ul { display: block;}
+
+--Q2
+La ligne qui est derrier les menus disparait
+
+--Q3
+En supprimant le display
+
+ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 200px;
+    display: none;
+
+--Q4
+La propiété hover permets que lors qu'on suvole quelquechose.
+Ce quelquechose qui dans ce cas est une nav bar aura une action comme par exemple faire afficher des sous menus
+ul li ul li:hover { background: #666; }
+
+ul li:hover ul { display: block;}
+
+--Q5
+Car quand on est sur le sous menus c'est comme si on était a l'interieur du menu produit dans ce cas la
+(je ne sais pas trés bien comment expliquer)
