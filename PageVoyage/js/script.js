@@ -2,12 +2,15 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
     cmdadd.addEventListener("click", adduser);
-    cmddelete.addEventListener("click", usrdelete);
     cmdedit.addEventListener("click", usredit);
     cmdsave.addEventListener("click", usrsave);
     txtNum1.addEventListener("keyup", initiale);
     cmdshowless.addEventListener("click", hide);
     cmdshowmore.addEventListener("click", show);
+    cmdadd.addEventListener("click", blockSpecialChar);
+
+
+
 
 }
 
@@ -25,18 +28,8 @@ function adduser() {
     td8 = document.createElement('td')
     td9 = document.createElement('td')
     td10 = document.createElement('td')
+    div = document.createElement('div')
 
-    var button = document.createElement('input')
-
-    td10 = button
-
-
-    button.type = 'button';
-    button.value = 'X';
-    button.id = 'cmddelete';
-    button.classList.add('btn-danger');
-    button.classList.add("btn");
-    button.addEventListener('click',usrdelete)
 
 
     th.innerText = txtNum0.value;
@@ -49,7 +42,9 @@ function adduser() {
     td7.innerText = txtNum7.value;
     td8.innerText = txtNum8.value;
     td9.innerText = txtNum9.value;
-    td10.innerText = td10
+    div.innerText = "X"
+    div.className = "btn btn-danger"
+    div.addEventListener('click',usrdelete)
 
     tr.appendChild(th)
     tr.appendChild(td1)
@@ -61,15 +56,18 @@ function adduser() {
     tr.appendChild(td7)
     tr.appendChild(td8)
     tr.appendChild(td9)
-    tr.appendChild(button)
+    tr.appendChild(td10)
+    td10.appendChild(div)
+
+
     tblBody.appendChild(tr)
 
 
 }
 
 function usrdelete(event) {
-    button = event.target
-    td = button.parentNode
+    input = event.target
+    td = input.parentNode
     tr = td.parentNode
     tblBody = tr.parentNode
     tblBody.removeChild(tr)
@@ -161,4 +159,9 @@ function initiale() {
     var upcase = resultat.toUpperCase();
     // put the value in the second box
     txtNum9.value = upcase;
+}
+function blockSpecialChar(e) {
+    var k = e.keyCode;
+    return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8   || (k >= 48 && k <= 57));
+
 }

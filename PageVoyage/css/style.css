@@ -9,9 +9,9 @@
 
 }
 
-#tab1 {
-
-    margin-left: 2px;
+.tab1 {
+    margin-right: 15px;
+    margin-left: 10px;
 
 }
 
@@ -28,7 +28,5 @@
     float: right;
 }
 
-.tab {
-    margin-left: 5px;
-}
+
 

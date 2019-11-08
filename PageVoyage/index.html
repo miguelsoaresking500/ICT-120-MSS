@@ -11,6 +11,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="node_modules/bootstrap/js/dist/tab.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
 
 
@@ -60,8 +63,8 @@
 
 </div>
 
-<div class="tab  col-sm-2 col-md-4 col-lg-6 w-75" id="tab1">
-    <table class="  col-sm-2 col-md-4 col-lg-6 table table-striped ">
+<div class="tab  col-sm-2 col-md-4 col-lg-6 table-sm" >
+    <table class="  col-sm-2 col-md-4 col-lg-6 table table-striped table-sm" id="tab1">
         <thead>
         <tr>
             <th scope="col">N°</th>
@@ -73,13 +76,13 @@
             <th scope="col">Adresse</th>
             <th scope="col">Nationalité</th>
             <th scope="col">Role</th>
-            <th scope="col">Initiale</th>
+            <th scope="col">Initiales</th>
 
 
         </tr>
         </thead>
 
-        <tbody class="  col-sm-2 col-md-4 col-lg-6">
+        <tbody class="col-sm-2 col-md-4 col-lg-6 table-sm">
         <tr>
             <th scope="row"><input type="number" id="txtNum0" placeholder="numéro" min="1"></th>
             <td><input type="text" id="txtNum1" placeholder="Nom complet"></td>
@@ -90,7 +93,7 @@
             <td><input type="text" id="txtNum6" placeholder="Adresse"></td>
             <td><input type="text" id="txtNum7" placeholder="Nationalité"></td>
             <td><input type="text" id="txtNum8" placeholder="Rôle"></td>
-            <td><input type="text" id="txtNum9" placeholder="Initiale"></td>
+            <td><input type="text" id="txtNum9" placeholder="Initiales"></td>
 
         </tr>
         </tbody>
@@ -119,7 +122,7 @@
         <th scope="col">Nationalité</th>
         <th scope="col">Role</th>
         <th scope="col">Initiale</th>
-        <th scope="col">Supprimer</th>
+
 
     </tr>
     </thead>
@@ -135,7 +138,7 @@
         <td> Suisse</td>
         <td> Éleve</td>
         <td> DMI</td>
-        <td scope="row"><input class="btn btn-danger" type="button" placeholder="X" id="cmddelete" value="X">
+
 
         </td>
 
