@@ -84,15 +84,22 @@
 
         <tbody class="col-sm-2 col-md-4 col-lg-6 table-sm">
         <tr>
-            <th scope="row"><input type="number" id="txtNum0" placeholder="numéro" min="1"></th>
-            <td><input type="text" id="txtNum1" placeholder="Nom complet"></td>
-            <td><input type="number" id="txtNum2" placeholder=" Age " min="14"></td>
-            <td><input type="text" id="txtNum3" placeholder="Classe"></td>
-            <td><input type="text" id="txtNum4" placeholder="Genre"></td>
-            <td><input type="text" id="txtNum5" placeholder="N°téléphone"></td>
-            <td><input type="text" id="txtNum6" placeholder="Adresse"></td>
-            <td><input type="text" id="txtNum7" placeholder="Nationalité"></td>
-            <td><input type="text" id="txtNum8" placeholder="Rôle"></td>
+            <th scope="row"><input Title="Inserez le numéro de la personne" type="number" id="Num0" placeholder="numéro" min="1"></th>
+            <td><input Title="Inserez le nom de la personne" type="text" id="txtNum1" placeholder="Nom complet"></td>
+            <td><input Title="Inserez le nom de l'age" type="number" id="Num2" placeholder=" Age " min="14"></td>
+            <td><input Title="Inserez le classe de la personne" type="text" id="txtNum3" placeholder="Classe"></td>
+            <td>
+                <SELECT name="Genre" class="placeholder" id="optionselect">
+                    <option  value=" "  disabled selected >Civilité</option>
+                    <option value="M">Homme</option>
+                    <option value="F">Femme</option>
+                    <option value="Autre">Autre</option>
+                </SELECT>
+            </td>
+            <td><input Title="Inserez le N°téléphone de la personne" type="text" id="txtNum5" placeholder="N°téléphone"></td>
+            <td><input Title="Inserez l'adresse de la personne" type="text" id="txtNum6" placeholder="Adresse"></td>
+            <td><input Title="Inserez la Nationalité de la personne" type="text" id="txtNum7" placeholder="Nationalité"></td>
+            <td><input Title="Inserez le Rôle de la personne" type="text" id="txtNum8" placeholder="Rôle"></td>
             <td><input type="text" id="txtNum9" placeholder="Initiales"></td>
 
         </tr>
@@ -104,8 +111,8 @@
     <input class="btn btn-info" id="cmdedit" type="button" value="Éditer">
     <input class="btn btn-success" id="cmdadd" type="button" VALUE="Ajouter">
     <input class="btn btn-success d-none" id="cmdsave" type="button" display="none" VALUE="Sauvegarder">
-    <input class="btn btn-primary " id="cmdshowless" type="button" VALUE="Montrer moins">
-    <input class="btn btn-primary d-none " id="cmdshowmore" type="button"  VALUE="Montrer plus">
+    <input class="btn btn-primary " id="cmdshowless" type="button" VALUE="Montrer moins" disabled>
+    <input class="btn btn-primary d-none " id="cmdshowmore" type="button"  VALUE="Montrer plus" disabled>
 </div>
 <table class=" table table-striped table-dark m-3 ">
 

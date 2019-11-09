@@ -7,7 +7,7 @@ function init() {
     txtNum1.addEventListener("keyup", initiale);
     cmdshowless.addEventListener("click", hide);
     cmdshowmore.addEventListener("click", show);
-    cmdadd.addEventListener("click", blockSpecialChar);
+    cmdadd.addEventListener("click", inpttest);
 
 
 
@@ -32,11 +32,11 @@ function adduser() {
 
 
 
-    th.innerText = txtNum0.value;
+    th.innerText = Num0.value;
     td1.innerText = txtNum1.value;
-    td2.innerText = txtNum2.value;
+    td2.innerText = Num2.value;
     td3.innerText = txtNum3.value;
-    td4.innerText = txtNum4.value;
+    td4.innerText = optionselect.value;
     td5.innerText = txtNum5.value;
     td6.innerText = txtNum6.value;
     td7.innerText = txtNum7.value;
@@ -140,7 +140,7 @@ function show() {
 function initiale() {
 
     var x = " ";
-    //we meuser length of the name
+    //we mesure the length of the name
 
     var long = txtNum1.value.length;
     //find where is the place exactly
@@ -160,8 +160,18 @@ function initiale() {
     // put the value in the second box
     txtNum9.value = upcase;
 }
-function blockSpecialChar(e) {
-    var k = e.keyCode;
-    return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8   || (k >= 48 && k <= 57));
+
+function inpttest() {
+    if (Num0.value == '') {
+        Num0.value = 1
+        alert("inserez un chifre");
+
+    }
+
+    if (Num3.value == '') {
+        Num3.value = 14
+        alert("inserez un chifre");
+
+    }
 
 }
