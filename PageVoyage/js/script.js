@@ -1,3 +1,10 @@
+//author: Miguel Soares
+//title:JavaScrip code PageVoyage
+//Date:10.11.2019
+//version: 2.0
+
+
+
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
