@@ -21,6 +21,7 @@ function RequierdFname() {
 
     var value = document.getElementById('txtFname').value;
     if (value.length < 2) {
+        cmdsubmit.disabled = true;
         //dit a l'utilisateur ce qui va pas
         divinvalid1.classList.remove("d-none")
         return false;
@@ -41,6 +42,7 @@ function RequierdLname() {
 
     var value = document.getElementById('txtLname').value;
     if (value.length < 2) {
+        cmdsubmit.disabled = true;
         //dit a l'utilisateur ce qui va pas
         divinvalid2.classList.remove("d-none")
         return false;
@@ -60,6 +62,7 @@ function RequierdPassword() {
 
     var value = document.getElementById('txtPass').value;
     if (value.length < 6) {
+        cmdsubmit.disabled = true;
         //dit a l'utilisateur ce qui va pas
         divinvalidPw.classList.remove("d-none")
         return false;
