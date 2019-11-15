@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation</title>
+    <script src="js/script_motivation.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid flex-column">
+    <h2>Bonjour <span id="Fname">(prénom)</span> <span id="Lname">(nom)</span></h2>
+    <form action="thankyou.html">
+        <label>Veuillez décrire ci-dessous votre motivation à nous rejoindre, en au minimum 30 caractères et au maximum 144</label><br>
+        <textarea id="txtdescription" cols="60" rows="3"></textarea>
+        <div class="d-none" id="divpasassez">Cette description est trop courte</div>
+        <div class="d-none" id="divtrop"> Il vous reste 144 caractères</div>
+        <input id="cmdsubmit" class="d-none"  type="submit" value="Ok">
+    </form>
+</div>
+</body>
+<script>alert(window.location.search)</script>
+</html>

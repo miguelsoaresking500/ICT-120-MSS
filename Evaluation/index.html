@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/script_index.js"></script>
+    <script src="js/script_motivation.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h2>Inscription au tchoukball club Ste-Croix</h2>
+    <form action="motivation.html">
+        <label>Prénom</label><input class="name" id="txtFname" type="text" name="txtFirstName"><div id="divinvalid1" class="d-none">Invalide: trop court</div>
+        <label>Nom</label><input class="name" id="txtLname" type="text" name="txtLastName"><div id="divinvalid2" class="d-none">Invalide: trop court</div>
+        <label>Mot de passe</label><input id="txtPass" type="password"><div id="divinvalidPw" class="d-none">Invalide: minimum 6 caractères</div>
+        <label>Confirmation</label><input id="txtPassR" type="password"><div id="divinvalidPw2" class="d-none">Invalide: différent</div>
+        <input disabled id="cmdsubmit" type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
